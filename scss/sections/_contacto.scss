@@ -1,83 +1,254 @@
 // Estilos para TARJETAS DE SECCION contacto
-        .contenedor-contacto {
-            display: grid;
-            grid-template-columns: 1fr 1fr 2fr;
-            gap: 20px;
+.contenedor-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 20px;
+    max-width: 100%;
+    padding: 20px;
+
+    .card-mapa {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: flex-end;
+
+        img {
             max-width: 100%;
+            height: auto;
+        }
+    }
+
+    .card-sucursales {
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+
+            font-size: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    .card-formulario {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 0 0 100%;
+
+        .form {
+            text-align: left;
             padding: 20px;
-        
-            .card-mapa {
-                display: flex;
-                flex-wrap: wrap;
-                flex-direction: column;
-                align-content: flex-end;
-        
-                img {
-                    max-width: 100%;
-                    height: auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+
+            label {
+                display: block;
+                margin-bottom: 10px;
+                font-size: 18px;
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                padding: 12px 20px;
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                font-size: 16px;
+            }
+
+            input[type="submit"] {
+                background-color: $color-gris;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $color-hover;
                 }
-            }
-        
-            .card-sucursales {
-                padding: 20px;
-                display: flex;
-                flex-wrap: wrap;
-                flex-direction: column;
-                justify-content: center;
-        
-                h2 {
-                    
-                    font-size: 15px;
-                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-                }
-            }
-            .card-formulario {
-                display: flex;
-                flex-wrap: wrap;
-                flex: 0 0 100%;
-                .form {
-                    text-align: left;
-                    padding: 20px;
-                    border: 1px solid #ccc;
-                    border-radius: 5px;
-                
-                    display: flex;
-                    width: 100%;
-                    flex-direction: column;
-                    flex-wrap: wrap;
-                    align-content: center;
-                    justify-content: center;
-                
-                    label {
-                        display: block;
-                        margin-bottom: 10px;
-                        font-size: 18px;
-                    }
-                
-                    input,
-                    textarea {
-                        width: 100%;
-                        padding: 12px 20px;
-                        margin-bottom: 20px;
-                        border: 1px solid #ccc;
-                        border-radius: 4px;
-                        box-sizing: border-box;
-                        font-size: 16px;
-                    }
-                
-                    input[type="submit"] {
-                        background-color: $color-gris;
-                        color: white;
-                        padding: 12px 20px;
-                        border: none;
-                        border-radius: 4px;
-                        cursor: pointer;
-                
-                        &:hover {
-                            background-color: $color-hover;
-                        }
-                    }
-            }
-            
             }
         }
+
+    }
+}
+
+/* -----------------------------------media queries--------------------------------------  */
+/* ----RESPOSIVE  formulario de contacto---- */
+@media (max-width: 768px) {
+    .contenedor-contacto {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        /* Espacio entre las columnas */
+        max-width: 100%;
+        /* Ocupa todo el ancho de la pantalla */
+        padding: 20px;
+        justify-content: center;
+
+        .texto {
+            width: 100%;
+            /* Opcional: Ajusta el ancho según tus necesidades */
+            font-size: 15px;
+            line-height: 1.5;
+            /* Centra horizontalmente */
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        .card-formulario {
+
+            display: flex;
+            flex-wrap: wrap;
+            flex: 0 0 80%;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .contenedor-contacto {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        /* Espacio entre las columnas */
+        max-width: 100%;
+        /* Ocupa todo el ancho de la pantalla */
+        padding: 20px;
+        justify-content: center;
+
+        .text-center {
+            margin: 10px
+        }
+
+        .card-mapa {
+            display: flex;
+            height: 10%;
+            align-content: center;
+
+            .img {
+                max-width: 80%;
+                /* La imagen no será más ancha que la columna */
+                height: 60%;
+                /* Mantiene la proporción de aspecto*/
+            }
+        }
+
+        .card-formulario {
+
+            display: flex;
+            flex-wrap: wrap;
+            flex: 0 0 100%;
+
+            .form label {
+                font-size: 15px;
+            }
+            .form input,
+            textarea {
+                font-size: 12px;
+            }
+            .form input[type="submit"] {
+                font-size: 15px;
+            }
+        }
+
+        .card-sucursales {
+            /*border: 1px solid #ccc;*/
+            padding: 20px;
+            /*border-radius: 8px;*/
+            /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+
+            .p {
+                font-size: 12px;
+            }
+
+        }
+
+    }
+}
+@media (max-width: 425px) {
+   
+
+    .contenedor-contacto {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        /* Espacio entre las columnas */
+        max-width: 100%;
+        /* Ocupa todo el ancho de la pantalla */
+        padding: 20px;
+        justify-content: center;
+        .text-center {
+            margin: 10px
+        }
+        .card-mapa {
+            display: flex;
+            height: 10%;
+            align-content: center;
+            .img {
+                max-width: 80%;
+                /* La imagen no será más ancha que la columna */
+                height: 60%;
+                /* Mantiene la proporción de aspecto*/
+            }
+        }
+        .card-formulario {
+
+            display: flex;
+            flex-wrap: wrap;
+            flex: 0 0 100%;
+            .form label {
+                font-size: 15px;
+        
+            }
+        
+            .form input,
+            textarea {
+                font-size: 12px;
+        
+            }
+        
+            .form input[type="submit"] {
+                font-size: 15px;
+            }
+        
+        }
+        .card-sucursales {
+            /*border: 1px solid #ccc;*/
+            padding: 20px;
+            /*border-radius: 8px;*/
+            /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            .p {
+                font-size: 12px;
+            }
+    
+        }
+    }
+
+  
+    
+
+   
+
+    
+}

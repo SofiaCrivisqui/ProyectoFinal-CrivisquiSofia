@@ -23,3 +23,29 @@
         }
     }
 }
+/* -----------------------------------media queries--------------------------------------  */
+/*--RESPOSIVE  munu de ruta de navegacion- productos------  */
+@media (max-width: 375px) {
+    .navbar1 {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 1%;
+        font-size: 15px;
+        margin: 0px 10px;
+
+
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar1 {
+        background-color: #ffffff;
+        padding: 10px;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 50%;
+        /* Ajusta el ancho según tus necesidades */
+
+    }
+}

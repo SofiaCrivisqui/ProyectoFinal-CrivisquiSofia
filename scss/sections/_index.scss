@@ -102,3 +102,73 @@
             }
         }
     }
+/* -----------------------------------media queries--------------------------------------  */
+    /* RESPOSIVE PORTADA INDEX */
+    @media (max-width: 768px) {
+        .jumbotron {
+          background-image: url("../recursos/portadaindex768.png");
+          background-size: cover;
+        }
+      }
+      
+      @media (max-width: 425px) {
+        .jumbotron {
+          background-image: url("../recursos/portadaindex426.png");
+          H1 {
+            font-size: 20px !important;
+            font-weight: bold;
+          }
+        }
+      }
+      
+      @media (max-width: 375px) {
+        .jumbotron {
+          background-image: url("../recursos/PORTADAINDEX375.png");
+          H1 {
+            font-size: 20px !important;
+            font-weight: bold;
+          }
+        }
+      }
+      
+      @media (max-width: 696px) {
+        .jumbotron {
+          background-image: url("../recursos/PORTADAINDEX375.png");
+          H1 {
+            font-size: 20px !important;
+            font-weight: bold;
+          }
+        }
+      }
+      
+      /* RESPOSIVE productos destacados */
+      /* Tablet */
+      @media (max-width: 768px) {
+        .galeria {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          /* Cambia a una sola columna en dispositivos móviles */
+          flex-wrap: wrap;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          h2 {
+            font-size: 0;
+          }
+        }
+      }
+      
+      @media (max-width: 375px) {
+        .galeria {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          /* Cambia a una sola columna en dispositivos móviles */
+          flex-wrap: wrap;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          h2 {
+            font-size: 0;
+          }
+        }
+      }

@@ -45,7 +45,7 @@
   text-align: justify;
   font-size: 16px; }
 
-/*--------- secciones-------*/
+/*--------- secciones iguales para todas las paginas-------*/
 /* Estilo base para la barra de navegación */
 .navbar {
   padding: 1px !important; }
@@ -83,6 +83,26 @@
           .navbar .custom-bg .nav-izq .navbar-nav .nav-link i {
             color: #f0f0f0; }
 
+/* -----------------------------------media queries--------------------------------------  */
+@media (max-width: 768px) {
+  .navbar-nav {
+    justify-content: flex-end; }
+  .container-fluid {
+    display: block; } }
+
+@media (max-width: 375px) {
+  .navbar {
+    padding: 10px;
+    /* Reduce el espacio de relleno */
+    flex-wrap: wrap;
+    justify-content: center; }
+  .navbar-logo img {
+    width: 80px;
+    /* Ajusta el tamaño del logotipo */ }
+  .horizontal li {
+    font-size: 8px;
+    /* Reduce el tamaño de fuente para los elementos de navegación */ } }
+
 /* Estilo base para la barra de footer */
 footer {
   display: flex;
@@ -107,6 +127,30 @@ footer {
     margin-right: 10px;
     /* Espacio entre el logotipo y el texto */ }
 
+/* -----------------------------------media queries--------------------------------------  */
+/* ------footer todas las secciones ----- */
+@media (max-width: 768px) {
+  footer {
+    padding: 5px;
+    /* Reduce el espacio de relleno */ }
+  img.logo {
+    max-width: 80px;
+    /* Ajusta el tamaño del logotipo */ } }
+
+@media (max-width: 375px) {
+  footer {
+    padding: 5px;
+    /* Reduce el espacio de relleno */
+    flex-wrap: wrap;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  img.logo {
+    max-width: 100px;
+    padding: 5px; } }
+
 /* Estilo base para la barra ruta de navegacion */
 .breadcrumb {
   list-style: none;
@@ -124,6 +168,27 @@ footer {
         cursor: pointer;
         font-weight: bold; }
 
+/* -----------------------------------media queries--------------------------------------  */
+/*--RESPOSIVE  munu de ruta de navegacion- productos------  */
+@media (max-width: 375px) {
+  .navbar1 {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1%;
+    font-size: 15px;
+    margin: 0px 10px; } }
+
+@media (max-width: 768px) {
+  .navbar1 {
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 50%;
+    /* Ajusta el ancho según tus necesidades */ } }
+
+/*--------- Estilos de cada seccion-------*/
 /* ------------------------Estilo PARA EL INDEX---------------------------------------- */
 .jumbotron {
   background-image: url("../recursos/imagen index.png");
@@ -193,6 +258,60 @@ footer {
       .galeria .imagen .ver-mas:hover {
         background-color: #fceb24; }
 
+/* -----------------------------------media queries--------------------------------------  */
+/* RESPOSIVE PORTADA INDEX */
+@media (max-width: 768px) {
+  .jumbotron {
+    background-image: url("../recursos/portadaindex768.png");
+    background-size: cover; } }
+
+@media (max-width: 425px) {
+  .jumbotron {
+    background-image: url("../recursos/portadaindex426.png"); }
+    .jumbotron H1 {
+      font-size: 20px !important;
+      font-weight: bold; } }
+
+@media (max-width: 375px) {
+  .jumbotron {
+    background-image: url("../recursos/PORTADAINDEX375.png"); }
+    .jumbotron H1 {
+      font-size: 20px !important;
+      font-weight: bold; } }
+
+@media (max-width: 696px) {
+  .jumbotron {
+    background-image: url("../recursos/PORTADAINDEX375.png"); }
+    .jumbotron H1 {
+      font-size: 20px !important;
+      font-weight: bold; } }
+
+/* RESPOSIVE productos destacados */
+/* Tablet */
+@media (max-width: 768px) {
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Cambia a una sola columna en dispositivos móviles */
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    .galeria h2 {
+      font-size: 0; } }
+
+@media (max-width: 375px) {
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Cambia a una sola columna en dispositivos móviles */
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    .galeria h2 {
+      font-size: 0; } }
+
 /* ------------------------Estilo para la seccion PRODUCTOS---------------------------------------- */
 .jumbotron-1 {
   background-image: url("../recursos/Productos portada.png");
@@ -245,6 +364,80 @@ footer {
       object-fit: cover;
       width: 300%;
       height: 100%; }
+
+/*----- RESPOSIVE portada de productos----- */
+@media (max-width: 768px) {
+  .jumbotron-1 {
+    background-image: url("../recursos/Productos portada.png");
+    background-size: cover;
+    padding: 50px 0; }
+  .jumbotron-1 p {
+    width: 70%; } }
+
+@media (max-width: 425px) {
+  .jumbotron-1 {
+    background-image: url("../recursos/portadaproductos375.png"); } }
+
+@media (max-width: 375px) {
+  .jumbotron-1 {
+    background-image: url("../recursos/portadaproductos375.png"); }
+  .jumbotron-1 p {
+    width: 70%;
+    padding: 15px;
+    background-size: none;
+    padding: 50px 0;
+    font-size: 15px; }
+  .jumbotron-1 h1 {
+    font-size: 24px;
+    margin-bottom: 20px; }
+  .jumbotron-1 p {
+    width: 100%;
+    padding: 20px; } }
+
+/*----- RESPOSIVE tarjeta de productos----- */
+@media (max-width: 768px) {
+  .product-description h2 {
+    font-size: 15px; } }
+
+@media (max-width: 696px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center; }
+    .grid-container .product-card {
+      margin: 5px 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9; }
+      .grid-container .product-card .product-description h2 {
+        font-size: 16px;
+        margin-bottom: 5px; }
+      .grid-container .product-card .product-description p {
+        font-size: 12px;
+        line-height: 1.2; }
+      .grid-container .product-card .product-image img {
+        max-width: 100%;
+        height: auto; } }
+
+@media (max-width: 375px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center; }
+    .grid-container .product-card {
+      margin: 5px 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9; }
+      .grid-container .product-card .product-description h2 {
+        font-size: 16px;
+        margin-bottom: 5px; }
+      .grid-container .product-card .product-description p {
+        font-size: 12px;
+        line-height: 1.2; }
+      .grid-container .product-card .product-image img {
+        max-width: 100%;
+        height: auto; } }
 
 /* ------------------------Estilo para la seccion DESCARGAS---------------------------------------- */
 .jumbotron-2 {
@@ -308,7 +501,39 @@ footer {
         color: #fff;
         margin: 0; }
 
-/* ------------------------Estilo para la seccion servicios---------------------------------------- */
+/* -----------------------------------media queries--------------------------------------  */
+/* ----RESPOSIVE tarjetas de instructivos descargas---- */
+@media (max-width: 768px) {
+  .article-card {
+    margin: 10px; } }
+
+@media (max-width: 375px) {
+  .article-card {
+    width: none; } }
+
+/* ----RESPOSIVE portada descargas---- */
+@media (max-width: 768px) {
+  .jumbotron-2 {
+    background-size: none;
+    padding: 50px 0; }
+    .jumbotron-2 .p {
+      width: 70%; } }
+
+@media (max-width: 375px) {
+  .jumbotron-2 p {
+    width: 70%;
+    padding: 15px;
+    background-size: none;
+    padding: 50px 0;
+    font-size: 15px; }
+  .jumbotron-2 h1 {
+    font-size: 24px;
+    margin-bottom: 20px; }
+  .jumbotron-2 p {
+    width: 100%;
+    padding: 20px; } }
+
+/* ------------------------Estilo para la seccion SERVICIOS---------------------------------------- */
 .jumbotron-3 {
   background-image: url("../recursos/servicios.png");
   background-size: cover;
@@ -359,7 +584,109 @@ footer {
       max-width: 100%;
       height: auto; }
 
-/* ------------------------Estilo para la seccion contacto---------------------------------------- */
+/* ----RESPOSIVE portada servicios---- */
+@media (max-width: 768px) {
+  .jumbotron-3 {
+    background-size: none;
+    padding: 50px 0; }
+  .jumbotron-3 p {
+    width: 70%; } }
+
+@media (max-width: 696px) {
+  .jumbotron-3 {
+    background-image: url("../recursos/portadaservicios375.png"); } }
+
+@media (max-width: 375px) {
+  .jumbotron-3 {
+    background-image: url("../recursos/portadaservicios375.png"); }
+  .jumbotron-3 p {
+    width: 70%;
+    padding: 15px;
+    background-size: none;
+    padding: 50px 0;
+    font-size: 15px; }
+  .jumbotron-3 h1 {
+    font-size: 24px;
+    margin-bottom: 20px; }
+  .jumbotron-3 p {
+    width: 100%;
+    padding: 20px; } }
+
+/* -----------------------------------media queries--------------------------------------  */
+/* ----RESPOSIVE main servicios---- */
+@media (max-width: 768px) {
+  p.text {
+    font-size: 15px;
+    padding: 10px; } }
+
+@media (max-width: 696px) {
+  .container-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; }
+    .container-servicios p.text {
+      font-size: 15px;
+      gap: 10px; }
+    .container-servicios h2 {
+      font-size: 20px; } }
+
+@media (max-width: 375px) {
+  .jumbotron-3 p {
+    width: 70%;
+    padding: 15px;
+    background-size: none;
+    padding: 50px 0;
+    font-size: 15px; }
+    .jumbotron-3 p .h1 {
+      font-size: 24px;
+      margin-bottom: 20px; }
+    .jumbotron-3 p .p {
+      width: 100%;
+      padding: 20px; } }
+
+/* ----RESPOSIVE main servicios---- */
+@media (max-width: 768px) {
+  p.text {
+    font-size: 15px;
+    padding: 10px; } }
+
+@media (max-width: 426px) {
+  .container-servicios {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: column !important; }
+    .container-servicios p.text {
+      font-size: 15px;
+      gap: 10px; }
+    .container-servicios h2 {
+      font-size: 20px; } }
+
+@media (max-width: 375px) {
+  .container-servicios {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: column !important; }
+    .container-servicios p.text {
+      font-size: 15px;
+      gap: 10px; }
+    .container-servicios h2 {
+      font-size: 20px; } }
+
+@media (max-width: 375px) {
+  .jumbotron-3 p {
+    width: 70%;
+    padding: 15px;
+    background-size: none;
+    padding: 50px 0;
+    font-size: 15px; }
+    .jumbotron-3 p .h1 {
+      font-size: 24px;
+      margin-bottom: 20px; }
+    .jumbotron-3 p .p {
+      width: 100%;
+      padding: 20px; } }
+
+/* ------------------------Estilo para la seccion CONTACTO---------------------------------------- */
 .contenedor-contacto {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
@@ -422,354 +749,8 @@ footer {
           background-color: #fceb24; }
 
 /* -----------------------------------media queries--------------------------------------  */
-/* ------navbar todas las secciones ----- */
-/*@media (max-width: 768px) {
-    .navbar {
-
-        padding: 10px;
-    }
-
-    .horizontal {
-
-        gap: 10px;
-    }
-}*/
-@media (max-width: 768px) {
-  .navbar-nav {
-    justify-content: flex-end; }
-  .container-fluid {
-    display: block; } }
-
-@media (max-width: 375px) {
-  .navbar {
-    padding: 10px;
-    /* Reduce el espacio de relleno */
-    flex-wrap: wrap;
-    justify-content: center; }
-  .navbar-logo img {
-    width: 80px;
-    /* Ajusta el tamaño del logotipo */ }
-  .horizontal li {
-    font-size: 8px;
-    /* Reduce el tamaño de fuente para los elementos de navegación */ } }
-
-/* ------footer todas las secciones ----- */
-@media (max-width: 768px) {
-  footer {
-    padding: 5px;
-    /* Reduce el espacio de relleno */ }
-  img.logo {
-    max-width: 80px;
-    /* Ajusta el tamaño del logotipo */ } }
-
-@media (max-width: 375px) {
-  footer {
-    padding: 5px;
-    /* Reduce el espacio de relleno */
-    flex-wrap: wrap;
-    font-size: 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  img.logo {
-    max-width: 100px;
-    padding: 5px; } }
-
-/* -----------------------------seccion index---------------------------  */
-/* RESPOSIVE PORTADA INDEX */
-@media (max-width: 768px) {
-  .jumbotron {
-    background-image: url("../recursos/portadaindex768.png");
-    background-size: cover; } }
-
-@media (max-width: 425px) {
-  .jumbotron {
-    background-image: url("../recursos/portadaindex426.png"); }
-  .jumbotron H1 {
-    font-size: 20px !important;
-    font-weight: bold; } }
-
-@media (max-width: 375px) {
-  .jumbotron {
-    background-image: url("../recursos/PORTADAINDEX375.png"); }
-  .jumbotron H1 {
-    font-size: 20px !important;
-    font-weight: bold; } }
-
-@media (max-width: 696px) {
-  .jumbotron {
-    background-image: url("../recursos/PORTADAINDEX375.png"); }
-  .jumbotron H1 {
-    font-size: 20px !important;
-    font-weight: bold; } }
-
-/* RESPOSIVE productos destacados */
-/* Tablet  */
-@media (max-width: 768px) {
-  .galeria {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* Cambia a una sola columna en dispositivos móviles */
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center; }
-  .galeria h2 {
-    font-size: 0; } }
-
-@media (max-width: 375px) {
-  .galeria {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* Cambia a una sola columna en dispositivos móviles */
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center; }
-  .galeria h2 {
-    font-size: 0; } }
-
-/* ------------------------------seccion productos------------------------  */
-/*----- RESPOSIVE portada de productos----- */
-@media (max-width: 768px) {
-  .jumbotron-1 {
-    background-image: url("../recursos/Productos portada.png");
-    background-size: cover;
-    padding: 50px 0; }
-  .jumbotron-1 p {
-    width: 70%; } }
-
-@media (max-width: 425px) {
-  .jumbotron-1 {
-    background-image: url("../recursos/portadaproductos375.png"); } }
-
-@media (max-width: 375px) {
-  .jumbotron-1 {
-    background-image: url("../recursos/portadaproductos375.png"); }
-  .jumbotron-1 p {
-    width: 70%;
-    padding: 15px;
-    background-size: none;
-    padding: 50px 0;
-    font-size: 15px; }
-  .jumbotron-1 h1 {
-    font-size: 24px;
-    margin-bottom: 20px; }
-  .jumbotron-1 p {
-    width: 100%;
-    padding: 20px; } }
-
-/*----- RESPOSIVE tarjeta de productos----- */
-@media (max-width: 768px) {
-  .product-description h2 {
-    font-size: 15px; } }
-
-@media (max-width: 696px) {
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    align-items: center; }
-  .product-card {
-    margin: 5px 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9; }
-  .product-description h2 {
-    font-size: 16px;
-    margin-bottom: 5px; }
-  .product-description p {
-    font-size: 12px;
-    line-height: 1.2; }
-  .product-image img {
-    max-width: 100%;
-    height: auto; } }
-
-@media (max-width: 375px) {
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    align-items: center; }
-  .product-card {
-    margin: 5px 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9; }
-  .product-description h2 {
-    font-size: 16px;
-    margin-bottom: 5px; }
-  .product-description p {
-    font-size: 12px;
-    line-height: 1.2; }
-  .product-image img {
-    max-width: 100%;
-    height: auto; } }
-
-/*--RESPOSIVE  munu de ruta de navegacion- productos------  */
-@media (max-width: 375px) {
-  .navbar1 {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: row-reverse;
-    width: 1%;
-    font-size: 15px;
-    margin: 0px 10px; } }
-
-@media (max-width: 768px) {
-  .navbar1 {
-    background-color: #ffffff;
-    padding: 10px;
-    display: flex;
-    flex-direction: row-reverse;
-    width: 50%;
-    /* Ajusta el ancho según tus necesidades */ } }
-
-/* ------------------------------seccion descargas------------------------  */
-/* ----RESPOSIVE tarjetas de instructivos descargas---- */
-@media (max-width: 768px) {
-  .article-card {
-    margin: 10px; } }
-
-@media (max-width: 375px) {
-  .article-card {
-    width: none; } }
-
-/* ----RESPOSIVE portada descargas---- */
-@media (max-width: 768px) {
-  .jumbotron-2 {
-    background-size: none;
-    padding: 50px 0; }
-  .jumbotron-2 p {
-    width: 70%; } }
-
-@media (max-width: 375px) {
-  .jumbotron-2 p {
-    width: 70%;
-    padding: 15px;
-    background-size: none;
-    padding: 50px 0;
-    font-size: 15px; }
-  .jumbotron-2 h1 {
-    font-size: 24px;
-    margin-bottom: 20px; }
-  .jumbotron-2 p {
-    width: 100%;
-    padding: 20px; } }
-
-/* ------------------------------seccion servicios------------------------  */
-/* ----RESPOSIVE portada servicios---- */
-@media (max-width: 768px) {
-  .jumbotron-3 {
-    background-size: none;
-    padding: 50px 0; }
-  .jumbotron-3 p {
-    width: 70%; } }
-
-@media (max-width: 696px) {
-  .jumbotron-3 {
-    background-image: url("../recursos/portadaservicios375.png"); } }
-
-@media (max-width: 375px) {
-  .jumbotron-3 {
-    background-image: url("../recursos/portadaservicios375.png"); }
-  .jumbotron-3 p {
-    width: 70%;
-    padding: 15px;
-    background-size: none;
-    padding: 50px 0;
-    font-size: 15px; }
-  .jumbotron-3 h1 {
-    font-size: 24px;
-    margin-bottom: 20px; }
-  .jumbotron-3 p {
-    width: 100%;
-    padding: 20px; } }
-
-/* ----RESPOSIVE main servicios---- */
-@media (max-width: 768px) {
-  p.text {
-    font-size: 15px;
-    padding: 10px; } }
-
-@media (max-width: 696px) {
-  .container-servicios {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column; }
-  p.text {
-    font-size: 15px;
-    gap: 10px; }
-  h2 {
-    font-size: 20px; } }
-
-@media (max-width: 375px) {
-  .jumbotron-3 p {
-    width: 70%;
-    padding: 15px;
-    background-size: none;
-    padding: 50px 0;
-    font-size: 15px; }
-  .jumbotron-3 h1 {
-    font-size: 24px;
-    margin-bottom: 20px; }
-  .jumbotron-3 p {
-    width: 100%;
-    padding: 20px; } }
-
-/* ----RESPOSIVE main servicios---- */
-@media (max-width: 768px) {
-  p.text {
-    font-size: 15px;
-    padding: 10px; } }
-
-@media (max-width: 426px) {
-  .container-servicios {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    flex-direction: column !important; }
-  p.text {
-    font-size: 15px;
-    gap: 10px; }
-  h2 {
-    font-size: 20px; } }
-
-@media (max-width: 375px) {
-  .container-servicios {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    flex-direction: column !important; }
-  p.text {
-    font-size: 15px;
-    gap: 10px; }
-  h2 {
-    font-size: 20px; } }
-
-@media (max-width: 375px) {
-  .jumbotron-3 p {
-    width: 70%;
-    padding: 15px;
-    background-size: none;
-    padding: 50px 0;
-    font-size: 15px; }
-  .jumbotron-3 h1 {
-    font-size: 24px;
-    margin-bottom: 20px; }
-  .jumbotron-3 p {
-    width: 100%;
-    padding: 20px; } }
-
-/* ------------------------------seccion contacto------------------------  */
 /* ----RESPOSIVE  formulario de contacto---- */
 @media (max-width: 768px) {
-  .texto {
-    width: 100%;
-    /* Opcional: Ajusta el ancho según tus necesidades */
-    font-size: 15px;
-    line-height: 1.5;
-    /* Centra horizontalmente */
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column; }
   .contenedor-contacto {
     display: flex;
     flex-direction: row;
@@ -779,14 +760,21 @@ footer {
     /* Ocupa todo el ancho de la pantalla */
     padding: 20px;
     justify-content: center; }
-  .card-formulario {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 0 0 80%; } }
+    .contenedor-contacto .texto {
+      width: 100%;
+      /* Opcional: Ajusta el ancho según tus necesidades */
+      font-size: 15px;
+      line-height: 1.5;
+      /* Centra horizontalmente */
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column; }
+    .contenedor-contacto .card-formulario {
+      display: flex;
+      flex-wrap: wrap;
+      flex: 0 0 80%; } }
 
 @media (max-width: 375px) {
-  .text-center {
-    margin: 10px; }
   .contenedor-contacto {
     display: flex;
     flex-direction: row;
@@ -796,41 +784,41 @@ footer {
     /* Ocupa todo el ancho de la pantalla */
     padding: 20px;
     justify-content: center; }
-  .card-mapa {
-    display: flex;
-    height: 10%;
-    align-content: center; }
-  .card-mapa img {
-    max-width: 80%;
-    /* La imagen no será más ancha que la columna */
-    height: 60%;
-    /* Mantiene la proporción de aspecto*/ }
-  .card-formulario {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 0 0 100%; }
-  .card-sucursales {
-    /*border: 1px solid #ccc;*/
-    padding: 20px;
-    /*border-radius: 8px;*/
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center; }
-  .card-sucursales p {
-    font-size: 12px; }
-  .form label {
-    font-size: 15px; }
-  .form input,
-  textarea {
-    font-size: 12px; }
-  .form input[type="submit"] {
-    font-size: 15px; } }
+    .contenedor-contacto .text-center {
+      margin: 10px; }
+    .contenedor-contacto .card-mapa {
+      display: flex;
+      height: 10%;
+      align-content: center; }
+      .contenedor-contacto .card-mapa .img {
+        max-width: 80%;
+        /* La imagen no será más ancha que la columna */
+        height: 60%;
+        /* Mantiene la proporción de aspecto*/ }
+    .contenedor-contacto .card-formulario {
+      display: flex;
+      flex-wrap: wrap;
+      flex: 0 0 100%; }
+      .contenedor-contacto .card-formulario .form label {
+        font-size: 15px; }
+      .contenedor-contacto .card-formulario .form input,
+      .contenedor-contacto .card-formulario textarea {
+        font-size: 12px; }
+      .contenedor-contacto .card-formulario .form input[type="submit"] {
+        font-size: 15px; }
+    .contenedor-contacto .card-sucursales {
+      /*border: 1px solid #ccc;*/
+      padding: 20px;
+      /*border-radius: 8px;*/
+      /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center; }
+      .contenedor-contacto .card-sucursales .p {
+        font-size: 12px; } }
 
 @media (max-width: 425px) {
-  .text-center {
-    margin: 10px; }
   .contenedor-contacto {
     display: flex;
     flex-direction: row;
@@ -840,34 +828,36 @@ footer {
     /* Ocupa todo el ancho de la pantalla */
     padding: 20px;
     justify-content: center; }
-  .card-mapa {
-    display: flex;
-    height: 10%;
-    align-content: center; }
-  .card-mapa img {
-    max-width: 80%;
-    /* La imagen no será más ancha que la columna */
-    height: 60%;
-    /* Mantiene la proporción de aspecto*/ }
-  .card-formulario {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 0 0 100%; }
-  .card-sucursales {
-    /*border: 1px solid #ccc;*/
-    padding: 20px;
-    /*border-radius: 8px;*/
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center; }
-  .card-sucursales p {
-    font-size: 12px; }
-  .form label {
-    font-size: 15px; }
-  .form input,
-  textarea {
-    font-size: 12px; }
-  .form input[type="submit"] {
-    font-size: 15px; } }
+    .contenedor-contacto .text-center {
+      margin: 10px; }
+    .contenedor-contacto .card-mapa {
+      display: flex;
+      height: 10%;
+      align-content: center; }
+      .contenedor-contacto .card-mapa .img {
+        max-width: 80%;
+        /* La imagen no será más ancha que la columna */
+        height: 60%;
+        /* Mantiene la proporción de aspecto*/ }
+    .contenedor-contacto .card-formulario {
+      display: flex;
+      flex-wrap: wrap;
+      flex: 0 0 100%; }
+      .contenedor-contacto .card-formulario .form label {
+        font-size: 15px; }
+      .contenedor-contacto .card-formulario .form input,
+      .contenedor-contacto .card-formulario textarea {
+        font-size: 12px; }
+      .contenedor-contacto .card-formulario .form input[type="submit"] {
+        font-size: 15px; }
+    .contenedor-contacto .card-sucursales {
+      /*border: 1px solid #ccc;*/
+      padding: 20px;
+      /*border-radius: 8px;*/
+      /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center; }
+      .contenedor-contacto .card-sucursales .p {
+        font-size: 12px; } }

@@ -57,3 +57,34 @@
         }
     }
 }
+/* -----------------------------------media queries--------------------------------------  */
+@media (max-width: 768px) {
+    .navbar-nav {
+        justify-content: flex-end
+    }
+
+    .container-fluid {
+        display: block
+    }
+
+
+}
+
+@media (max-width: 375px) {
+    .navbar {
+        padding: 10px;
+        /* Reduce el espacio de relleno */
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar-logo img {
+        width: 80px;
+        /* Ajusta el tamaño del logotipo */
+    }
+
+    .horizontal li {
+        font-size: 8px;
+        /* Reduce el tamaño de fuente para los elementos de navegación */
+    }
+}
