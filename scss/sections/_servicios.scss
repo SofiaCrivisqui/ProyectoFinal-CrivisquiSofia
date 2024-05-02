@@ -1,0 +1,88 @@
+// Estilos para la sección PORTADA SERVICIOS
+.jumbotron-3 {
+    background-image: url("../recursos/servicios.png");
+    background-size: cover;
+    color: #050505;
+    text-align: center;
+    padding: 70px 0;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    @extend .display-flex;
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 30px;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+        background-color: #f0f0f0;
+        padding: 30px;
+        width: 50%;
+        opacity: 0.9;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+}
+// Estilos para TARJETAS DE SECCION SERVICIOS
+.container-servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    grid-template-areas:
+        "log-img logist"
+        "post post-img";
+
+    .item-log-img {
+        
+        padding: 20px;
+        align-self: center;
+        grid-area: log-img;
+
+        .image {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    .item-logist {
+        grid-area: logist;
+        padding: 20px;
+        align-self: center;
+
+        h2 {
+           @extend .custom-h2;
+        }
+
+        .text {
+            @extend .custom-texto; 
+        }
+    }
+
+    .item-post {
+        grid-area: post;
+        padding: 20px;
+        align-self: center;
+
+        h2 {
+            @extend .custom-h2;
+        }
+
+        .text {
+            @extend .custom-texto; 
+        }
+    }
+
+    .item-post-img {
+        grid-area: post-img;
+        padding: 20px;
+        align-self: center;
+
+        .image {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

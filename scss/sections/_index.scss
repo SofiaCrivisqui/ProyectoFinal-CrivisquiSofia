@@ -1,0 +1,104 @@
+// Estilos para la sección PORTADA INDEX
+.jumbotron {
+    // Propiedades de fondo
+    background-image: url("../recursos/imagen index.png");
+    background-size: cover;
+    color: #050505;
+    text-align: center!important;
+    padding: 100px 0;
+    font-family: 'Roboto', sans-serif !important;
+    margin: 5px;
+    
+
+    // Estilos para el botón primario
+    .btn-primary {
+        background-color: $color-gris !important;
+        border: none !important;
+        color: #ffffff;
+        text-decoration: none;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: $color-hover !important;
+        }
+    }
+}
+// Estilos para las tarjetas de secciones DEL INDEX
+.row {
+    text-align: center;
+
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4 {
+        @extend .tarjetas-index
+    }
+
+    .card-1 {
+        background-image: url("../recursos/productos.png");
+    }
+
+    .card-2 {
+        background-image: url("../recursos/DESCARGAS2.png");
+    }
+
+    .card-3 {
+        background-image: url("../recursos/servicios-index.png");
+    }
+
+    .card-4 {
+        background-image: url("../recursos/contacto.png");
+    } }
+
+    .main-galeria {
+        h2 {
+            border-radius: 0px 0px 40px 40px;
+            color: #ffffff;
+            /*font-size: 30px;*/
+            height: 1px;
+            padding: 50px;
+            background-color: $color-gris;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    
+    // Estilos para la galería de PRODUCTOS DESTACADOS INDEX
+    .galeria {
+        display: flex;
+        gap: 20px;
+        margin: 5%;
+    
+        .imagen {
+            position: relative;
+    
+            img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 5px;
+            }
+    
+            .ver-mas {
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                color: #fff;
+                padding: 5px 10px;
+                cursor: pointer;
+                background-color: $color-gris;
+                border: none;
+                text-decoration: none;
+                transition: background-color 0.3s ease;
+    
+                &:hover {
+                    background-color: $color-hover;
+                }
+            }
+        }
+    }

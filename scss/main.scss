@@ -13,41 +13,16 @@
 @import "../scss/sections/footer";
 /* Estilo base para la barra ruta de navegacion */
 @import "../scss/sections/breadcrumb";
-
 /* ------------------------Estilo PARA EL INDEX---------------------------------------- */
-/*---------------------diseño de portada index --------------*/
-
-@import "../scss/sections/portadas"; 
-/*------------------ tarjetas secciones index-------------- */
-
-@import "../scss/sections/tarjetas";
-
-/*------------------ productos destacados index-------------- */
-@import "../scss/sections/tarjetas";
-
-
+@import "../scss/sections/index";
 /* ------------------------Estilo para la seccion PRODUCTOS---------------------------------------- */
-/*------------------ portada productos-------------- */
-@import "../scss/sections/portadas";
-
-/*------------------ tarjetas secciones prodcutos-------------- */
-@import "../scss/sections/tarjetas";
-
+@import "../scss/sections/productos";
 /* ------------------------Estilo para la seccion DESCARGAS---------------------------------------- */
-
-/*------------------ portada descargas-------------- */
-@import "../scss/sections/portadas";
-
-/*------------------ tarjetas descargas-------------- */
-@import "../scss/sections/tarjetas";
-
-/*------------------ portada servicios-------------- */
-@import "../scss/sections/portadas";
-/*------------------ tarjetas servicios-------------- */
-@import "../scss/sections/tarjetas";
-
-/*------------------ main contacto-------------- */
-@import "../scss/sections/tarjetas";
+@import "../scss/sections/descargas";
+/* ------------------------Estilo para la seccion servicios---------------------------------------- */
+@import "../scss/sections/servicios";
+/* ------------------------Estilo para la seccion contacto---------------------------------------- */
+@import "../scss/sections/contacto";
 
 /* -----------------------------------media queries--------------------------------------  */
 

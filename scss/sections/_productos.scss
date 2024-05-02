@@ -1,0 +1,72 @@
+// Estilos para la sección PORTADA PRODUCTOS
+.jumbotron-1 {
+    background-image: url("../recursos/Productos portada.png");
+    background-size: cover;
+    color: #050505;
+    text-align: center;
+    padding: 70px 0;
+    margin: 10px 10px 40px;
+    @extend .display-flex;
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 30px;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-family: 'Roboto', sans-serif !important;
+    }
+
+    p {
+        background-color: #f0f0f0;
+        /* Color de fondo para resaltar el bloque */
+        padding: 30px;
+        /* Espaciado interno */
+        width: 50%;
+        opacity: 0.9;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .texto-negrita {
+        font-weight: bold;
+    }
+}
+
+// Estilos para TARJETAS DE SECCION PRODUCTOS
+.grid-container {
+    display: grid;
+    margin: 10px;
+    grid-template-columns: repeat(3, 1fr); // Tres columnas con igual ancho
+    gap: 20px; // Espacio entre las tarjetas
+    font-family: 'Roboto', sans-serif;
+
+    .product-card {
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        display: grid;
+
+        .product-description {
+            padding-right: 20px;
+            height: 100px;
+            width: 50%;
+            color: #f0f0f0;
+
+            p {
+                color: #050505;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+
+        .product-image img {
+            max-width: 100%;
+            border-radius: 5px;
+            object-fit: cover;
+            width: 300%;
+            height: 100%;
+        }
+    }
+}
