@@ -1,0 +1,24 @@
+footer {
+    display: flex;
+    /*position: fixed;*/
+    bottom: 0;
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #474847;
+    z-index: 10;
+    margin-top: 1rem;
+    gap: 1rem;
+    box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.2);
+    font-size: 15px;
+    color: #f0f0f0; 
+    img.marca {
+        max-width: 100px;
+        /* Ajusta el tamaño según tus necesidades */
+        margin-right: 10px;
+        /* Espacio entre el logotipo y el texto */ }
+}
+  

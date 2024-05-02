@@ -1,0 +1,116 @@
+// Estilos para la sección PORTADA INDEX
+.jumbotron {
+    // Propiedades de fondo
+    background-image: url("../recursos/imagen index.png");
+    background-size: cover;
+    color: #050505;
+    text-align: center!important;
+    padding: 100px 0;
+    font-family: 'Roboto', sans-serif !important;
+    margin: 5px;
+    
+
+    // Estilos para el botón primario
+    .btn-primary {
+        background-color: $color-gris !important;
+        border: none !important;
+        color: #ffffff;
+        text-decoration: none;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: $color-hover !important;
+        }
+    }
+}
+// Estilos para la sección PORTADA PRODUCTOS
+.jumbotron-1 {
+    background-image: url("../recursos/Productos portada.png");
+    background-size: cover;
+    color: #050505;
+    text-align: center;
+    padding: 70px 0;
+    margin: 10px 10px 40px;
+    @extend .display-flex;
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 30px;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-family: 'Roboto', sans-serif !important;
+    }
+
+    p {
+        background-color: #f0f0f0;
+        /* Color de fondo para resaltar el bloque */
+        padding: 30px;
+        /* Espaciado interno */
+        width: 50%;
+        opacity: 0.9;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .texto-negrita {
+        font-weight: bold;
+    }
+}
+
+// Estilos para la sección PORTADA DESCARGAS
+
+.jumbotron-2 {
+    background-image: url("https://img.freepik.com/foto-gratis/descargar-concepto-red-conexion-compartida-internet_53876-148096.jpg?t=st=1711069681~exp=1711073281~hmac=8f8853806a4492296b39c980a231c9c7b222c172642bce5e6f0d456919c65d9d&w=740");
+    background-size: cover;
+    color: #050505;
+    text-align: center;
+    padding: 70px 0;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    @extend .display-flex;
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 30px;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-family: 'Roboto', sans-serif !important;
+    }
+
+    p {
+        background-color: #f0f0f0;
+        padding: 30px;
+        /* Espaciado interno */
+        width: 50%;
+        opacity: 0.9;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+}
+// Estilos para la sección PORTADA SERVICIOS
+.jumbotron-3 {
+    background-image: url("../recursos/servicios.png");
+    background-size: cover;
+    color: #050505;
+    text-align: center;
+    padding: 70px 0;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    @extend .display-flex;
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 30px;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+        background-color: #f0f0f0;
+        padding: 30px;
+        width: 50%;
+        opacity: 0.9;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+}

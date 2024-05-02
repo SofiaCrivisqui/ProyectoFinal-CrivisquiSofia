@@ -1,0 +1,59 @@
+.navbar {
+    padding: 1px !important;
+    
+
+    .custom-bg {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #474847;
+
+        .navbar-brand {
+            justify-content: flex-end;
+
+            img {
+
+                /* Justifica al margen derecho */
+
+                width: 150px !important;
+                /* Ajusta el ancho según tus necesidades */
+                height: 50px !important;
+                /* Mantiene la proporción original */
+                padding: 10px !important;
+            }
+        }
+        .nav-izq {
+
+            justify-content: flex-end;
+            flex-basis: 0;
+            flex-grow: 0;
+
+
+            .navbar-nav {
+                font-size: "roboto", sans-serif !important;
+
+                :hover {
+                    color: #fceb24 !important;
+                }
+                .active {
+                    font-weight: bold;
+                        color: #f0f0f0 !important;
+                    
+                }
+                .nav-link {
+
+                    color: #f0f0f0;
+                    text-decoration: none;
+                    padding: 5px;
+                    i {
+                        color: #f0f0f0;
+                        
+                    }
+                   
+                }
+            }
+        }
+    }
+}

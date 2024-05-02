@@ -1,0 +1,25 @@
+// Estilos para la navegación de  (breadcrumb)  TODAS LAS SECCIONES
+.breadcrumb {
+    list-style: none;
+    padding: 0px 10px !important; // Elimina cualquier relleno predeterminado
+    margin: 0;
+
+    &-item {
+        display: inline-block; // Muestra los elementos de migas de pan en línea
+        margin-right: 5px; // Agrega espaciado entre los elementos
+
+        &.active {
+            color: #848e97 !important; // Establece el color para el elemento activo
+        }
+
+        a {
+            text-decoration: none; // Elimina subrayados de los enlaces
+            color: #070707; // Establece el color del enlace
+
+            &:hover {
+                cursor: pointer;
+                font-weight: bold; // Cambia el peso de fuente al pasar el cursor sobre el enlace
+            }
+        }
+    }
+}
