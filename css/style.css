@@ -45,6 +45,19 @@
   text-align: justify;
   font-size: 16px; }
 
+.H2-separador, .main-galeria h2, .titulo-instructivo h2 {
+  border-radius: 0px 0px 40px 40px;
+  color: #ffffff;
+  /*font-size: 30px;*/
+  height: 1px;
+  padding: 50px;
+  background-color: #474847;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; }
+
 /*--------- secciones iguales para todas las paginas-------*/
 /* Estilo base para la barra de navegación */
 .navbar {
@@ -221,18 +234,6 @@ footer {
   .row .card-4 {
     background-image: url("../recursos/contacto.png"); }
 
-.main-galeria h2 {
-  border-radius: 0px 0px 40px 40px;
-  color: #ffffff;
-  /*font-size: 30px;*/
-  height: 1px;
-  padding: 50px;
-  background-color: #474847;
-  margin: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
 .galeria {
   display: flex;
   gap: 20px;
@@ -357,7 +358,12 @@ footer {
       .grid-container .product-card .product-description p {
         color: #050505; }
       .grid-container .product-card .product-description h2 {
-        font-size: 20px; }
+        font-size: 20px;
+        background-color: #474746;
+        border-radius: 5px;
+        color: #f0f0f0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center; }
     .grid-container .product-card .product-image img {
       max-width: 100%;
       border-radius: 5px;
@@ -709,7 +715,11 @@ footer {
     justify-content: center; }
     .contenedor-contacto .card-sucursales h2 {
       font-size: 15px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      background-color: #474847;
+      border-radius: 5px;
+      color: #f0f0f0;
+      text-align: center; }
   .contenedor-contacto .card-formulario {
     display: flex;
     flex-wrap: wrap;

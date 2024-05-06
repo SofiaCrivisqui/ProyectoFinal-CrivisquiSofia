@@ -34,7 +34,7 @@
     .card-2,
     .card-3,
     .card-4 {
-        @extend .tarjetas-index
+        @extend .tarjetas-index;
     }
 
     .card-1 {
@@ -55,16 +55,8 @@
 
     .main-galeria {
         h2 {
-            border-radius: 0px 0px 40px 40px;
-            color: #ffffff;
-            /*font-size: 30px;*/
-            height: 1px;
-            padding: 50px;
-            background-color: $color-gris;
-            margin: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        @extend .H2-separador;
+          
         }
     }
     

@@ -28,6 +28,13 @@
     }
 }
 
+.titulo-instructivo {
+    h2 {
+        @extend .H2-separador;
+
+    }
+}
+
 // Estilos para TARJETAS DE SECCION DESCARGAS
 .center {
     display: flex;
@@ -101,6 +108,7 @@
     .jumbotron-2 {
         background-size: none;
         padding: 50px 0;
+
         .p {
             width: 70%;
         }
