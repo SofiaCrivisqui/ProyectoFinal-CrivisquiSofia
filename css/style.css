@@ -204,7 +204,7 @@ footer {
 /*--------- Estilos de cada seccion-------*/
 /* ------------------------Estilo PARA EL INDEX---------------------------------------- */
 .jumbotron {
-  background-image: url("../recursos/imagen index.png");
+  background-image: url("../recursos/imagen index.WebP");
   background-size: cover;
   color: #050505;
   text-align: center !important;
@@ -226,13 +226,13 @@ footer {
 .row {
   text-align: center; }
   .row .card-1 {
-    background-image: url("../recursos/productos.png"); }
+    background-image: url("../recursos/productos.WebP"); }
   .row .card-2 {
-    background-image: url("../recursos/DESCARGAS2.png"); }
+    background-image: url("../recursos/DESCARGAS2.WebP"); }
   .row .card-3 {
-    background-image: url("../recursos/servicios-index.png"); }
+    background-image: url("../recursos/servicios-index.WebP"); }
   .row .card-4 {
-    background-image: url("../recursos/contacto.png"); }
+    background-image: url("../recursos/contacto.WebP"); }
 
 .galeria {
   display: flex;
