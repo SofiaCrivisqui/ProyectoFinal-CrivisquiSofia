@@ -335,8 +335,8 @@ footer {
     width: 50%;
     opacity: 0.9;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
-  .jumbotron-1 .texto-negrita {
-    font-weight: bold; }
+    .jumbotron-1 p .texto-negrita {
+      font-weight: bold; }
 
 .grid-container {
   display: grid;
@@ -462,11 +462,14 @@ footer {
     font-family: 'Roboto', sans-serif !important; }
   .jumbotron-2 p {
     background-color: #f0f0f0;
+    /* Color de fondo para resaltar el bloque */
     padding: 30px;
     /* Espaciado interno */
     width: 50%;
     opacity: 0.9;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+    .jumbotron-2 p .texto-negrita {
+      font-weight: bold; }
 
 .center {
   display: flex;
@@ -555,10 +558,14 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
   .jumbotron-3 p {
     background-color: #f0f0f0;
+    /* Color de fondo para resaltar el bloque */
     padding: 30px;
+    /* Espaciado interno */
     width: 50%;
     opacity: 0.9;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+    .jumbotron-3 p .texto-negrita {
+      font-weight: bold; }
 
 .container-servicios {
   display: grid;
