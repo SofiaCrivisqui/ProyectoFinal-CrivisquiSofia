@@ -18,13 +18,7 @@
     }
 
     p {
-        background-color: #f0f0f0;
-        /* Color de fondo para resaltar el bloque */
-        padding: 30px;
-        /* Espaciado interno */
-        width: 50%;
-        opacity: 0.9;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        @extend .p-portadas;
         .texto-negrita {
             font-weight: bold;
         }
@@ -60,7 +54,7 @@
 
             h2 {
                 font-size: 20px;
-                background-color: #474746;
+                background-color: $color-gris;
                 border-radius: 5px;
                 color: #f0f0f0;
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -137,7 +131,7 @@ background-image: url("../recursos/Productos\ portada.png");
         .product-card {
             margin: 5px 20px;
             padding: 10px;
-            border: 1px solid #ccc;
+            border: 1px solid $color-border;
             background-color: #f9f9f9;
             .product-description h2 {
                 font-size: 16px;
@@ -165,7 +159,7 @@ background-image: url("../recursos/Productos\ portada.png");
         .product-card {
             margin: 5px 20px;
             padding: 10px;
-            border: 1px solid #ccc;
+            border: 1px solid $color-border;
             background-color: #f9f9f9;
             .product-description h2 {
                 font-size: 16px;

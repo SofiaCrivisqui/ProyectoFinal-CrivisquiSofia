@@ -58,6 +58,15 @@
   justify-content: center;
   color: white; }
 
+.P-portadas {
+  background-color: #f0f0f0;
+  /* Color de fondo para resaltar el bloque */
+  padding: 30px;
+  /* Espaciado interno */
+  width: 50%;
+  opacity: 0.9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+
 /*--------- secciones iguales para todas las paginas-------*/
 /* Estilo base para la barra de navegación */
 .navbar {
