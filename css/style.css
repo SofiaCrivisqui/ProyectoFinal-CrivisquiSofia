@@ -235,7 +235,7 @@ footer {
 .row {
   text-align: center; }
   .row .card-1 {
-    background-image: url("../recursos/productos.WebP"); }
+    background-image: url("../recursos/productos.webp"); }
   .row .card-2 {
     background-image: url("../recursos/DESCARGAS2.webp"); }
   .row .card-3 {
@@ -537,7 +537,7 @@ footer {
 
 /* ------------------------Estilo para la seccion SERVICIOS---------------------------------------- */
 .jumbotron-3 {
-  background-image: url("../recursos/servicios.png");
+  background-image: url("../recursos/servicios1.webp");
   background-size: cover;
   color: #050505;
   text-align: center;
