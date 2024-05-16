@@ -523,17 +523,17 @@ footer {
 
 @media (max-width: 375px) {
   .jumbotron-2 p {
-    width: 70%;
+    width: 100% !important;
     padding: 15px;
     background-size: none;
-    padding: 50px 0;
+    padding: 50px 0 !important;
     font-size: 15px; }
   .jumbotron-2 h1 {
     font-size: 24px;
     margin-bottom: 20px; }
   .jumbotron-2 p {
     width: 100%;
-    padding: 20px; } }
+    padding: 20px !important; } }
 
 /* ------------------------Estilo para la seccion SERVICIOS---------------------------------------- */
 .jumbotron-3 {
@@ -598,17 +598,17 @@ footer {
   .jumbotron-3 {
     background-image: url("../recursos/portadaservicios375.png"); }
   .jumbotron-3 p {
-    width: 70%;
+    width: 100% !important;
     padding: 15px;
     background-size: none;
-    padding: 50px 0;
+    padding: 50px 0 !important;
     font-size: 15px; }
   .jumbotron-3 h1 {
     font-size: 24px;
     margin-bottom: 20px; }
   .jumbotron-3 p {
     width: 100%;
-    padding: 20px; } }
+    padding: 20px !important; } }
 
 /* -----------------------------------media queries--------------------------------------  */
 /* ----RESPOSIVE main servicios---- */
