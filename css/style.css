@@ -213,7 +213,7 @@ footer {
 /*--------- Estilos de cada seccion-------*/
 /* ------------------------Estilo PARA EL INDEX---------------------------------------- */
 .jumbotron {
-  background-image: url("../recursos/index.webp");
+  background-image: url("../recursos/index.jpg");
   background-size: cover;
   color: #050505;
   text-align: center !important;
